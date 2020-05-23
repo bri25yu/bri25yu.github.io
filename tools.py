@@ -67,8 +67,48 @@ class PathHelper:
 
     @staticmethod
     def get_nav_bar(path):
-        nav_bar, path_to_now = '', ''
+        nav_bar, path_to_now = '%s [Main menu](%s) | ' % (ih.get_home(path), BASE_URL), ''
         for step in PathHelper.split(path):
             path_to_now = os.path.join(path_to_now, step)
-            nav_bar += '[%s](%s) > ' % (step, PathHelper.get_link(path_to_now))
+            nav_bar += PathHelper.get_icon_filename(path_to_now, path) + ' > '
         return nav_bar + '\n\n'
+
+    @staticmethod
+    def get_icon_filename(path, output_path=None):
+        if output_path is None: output_path = path
+        image = ih.get_file(output_path) if os.path.isfile(path) else ih.get_folder(output_path)
+        name = PathHelper.get_filename(path)
+        return '%s <a href="%s">%s</a>' % (image, PathHelper.get_link(path), name)
+
+class ImageHelper:
+    IMAGE_TEMPLATE = '![Alt text](%s "%s")'
+    IMAGE_CUSTOM_SIZE_TEMPLATE = '<img src="%s" alt="%s" %s%stitle="%s">'
+
+    def __init__(self):
+        self.images = {}
+        for img_path in os.listdir(IMAGE_DIR):
+            img_name = os.path.splitext(img_path)[0]
+            self.images[img_name] = os.path.join(IMAGE_DIR, img_path)
+
+    def get(self, image_name, output_path, image_text=None, image_width=None, image_height=None):
+        if os.path.isfile(output_path): output_path = os.path.split(output_path)[0]
+        image_path = os.path.relpath(self.images.get(image_name, self.images.get('missing')), output_path)
+        if image_text is None: image_text = image_name
+
+        if image_width is None and image_height is None:
+            return ImageHelper.IMAGE_TEMPLATE % (image_path, image_text)
+
+        image_width = 'width="%s" ' % image_width if image_width is not None else ''
+        image_height = 'height="%s" ' % image_height if image_height is not None else ''
+        return ImageHelper.IMAGE_CUSTOM_SIZE_TEMPLATE % (image_path, image_text, image_width, image_height, image_text)
+
+    def get_folder(self, output_path):
+        return self.get('folder', output_path, image_width=12, image_height=12)
+
+    def get_file(self, output_path):
+        return self.get('file', output_path, image_width=12, image_height=12)
+
+    def get_home(self, output_path):
+        return self.get('home', output_path, image_width=12, image_height=12)
+
+ih = ImageHelper()

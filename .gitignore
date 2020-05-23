@@ -4,3 +4,4 @@ Language/*/*/*.pdf
 __pycache__
 output.md
 test.md
+test.py

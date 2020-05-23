@@ -1,6 +1,6 @@
-[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [02 Color](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color) > 
+<img src="..\..\..\images\home.png" alt="home" width="12" height="12" title="home"> [Main menu](https://bri25yu.github.io/) | <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language">Language</a> > <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought">02 Does language shape thought</a> > <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color">02 Color</a> > 
 
-02 Color
- - [01 kay-kempton.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/01%20kay-kempton.html)
- - [02 davidoff-et-al-nature99.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/02%20davidoff-et-al-nature99.html)
- - [03 maier-abdel-rahman-2018.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/03%20maier-abdel-rahman-2018.html)
+<img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color">02 Color</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/01%20kay-kempton.html">01 kay-kempton</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/02%20davidoff-et-al-nature99.html">02 davidoff-et-al-nature99</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/03%20maier-abdel-rahman-2018.html">03 maier-abdel-rahman-2018</a>

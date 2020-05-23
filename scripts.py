@@ -19,26 +19,27 @@ def main():
 def process_language_readings():
     language_dir = './Language'
     def file_fn(path):
-        if os.path.isfile(path): open(path[:-3] + 'md', 'a').close()
+        if os.path.isfile(path): open(path[:-3] + 'md', 'w').close()
 
     DirectoryTraversals(post_fn=file_fn).BFS(language_dir)
 
 def create_index_files(root):
-    template = ' - [%s](%s)\n'
+    template = ' - %s\n'
     def post_fn(curr):
         if not os.path.isdir(curr): return
 
         with open(os.path.join(curr, 'index.md'), 'w') as file:
             file.write(ph.get_nav_bar(curr))
-            file.write(ph.get_filename(curr) + '\n')
+            file.write(ph.get_icon_filename(curr, curr) + '\n')
             for child in os.listdir(curr):
                 if ph.valid_index_path(child):
-                    file.write(template % (child, ph.get_link(os.path.join(curr, child))))
+                    file.write(template % (ph.get_icon_filename(os.path.join(curr, child), curr)))
 
     DirectoryTraversals(post_fn=post_fn).BFS(root)
 
 def create_toc(root):
-    template = '<summary>%s<a href="%s">%s</a></summary>\n'
+    # template = '<summary>%s<a href="%s">%s</a></summary>\n'
+    template = '<summary>%s%s</summary>\n'
 
     with open(os.path.join(root, '..', 'output.md'), 'w') as file:
         level = 0
@@ -47,7 +48,8 @@ def create_toc(root):
             if ph.valid_index_path(curr):
                 if os.path.isdir(curr): file.write('<details>\n')
                 prepend = '' if level == 0 else '&nbsp;' * 4 * (level + os.path.isfile(curr))
-                file.write(template % (prepend, ph.get_link(curr), ph.get_filename(curr)))
+                # file.write(template % (prepend, ph.get_link(curr), ph.get_filename(curr)))
+                file.write(template % (prepend, ph.get_icon_filename(curr, '')))
             level += 1
 
         def post_fn(curr):

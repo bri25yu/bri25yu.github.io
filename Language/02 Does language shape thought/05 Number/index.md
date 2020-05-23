@@ -1,6 +1,6 @@
-[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [05 Number](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number) > 
+<img src="..\..\..\images\home.png" alt="home" width="12" height="12" title="home"> [Main menu](https://bri25yu.github.io/) | <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language">Language</a> > <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought">02 Does language shape thought</a> > <img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number">05 Number</a> > 
 
-05 Number
- - [01 gordon-2004.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/01%20gordon-2004.html)
- - [02 pica-et-al-2004.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/02%20pica-et-al-2004.html)
- - [03 butterworth-et-al-2008.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/03%20butterworth-et-al-2008.html)
+<img src="..\..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number">05 Number</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/01%20gordon-2004.html">01 gordon-2004</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/02%20pica-et-al-2004.html">02 pica-et-al-2004</a>
+ - <img src="..\..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/05%20Number/03%20butterworth-et-al-2008.html">03 butterworth-et-al-2008</a>
