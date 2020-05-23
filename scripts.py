@@ -8,8 +8,7 @@ from settings import TOC_DIR
 from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
-    create_toc('Berkeley')
-    create_toc('Language')
+    pass
 
 def process_language_readings():
     language_dir = './Language'
@@ -80,8 +79,8 @@ def create_toc(root):
 
         DirectoryTraversals(pre_fn=pre_fn, post_fn=post_fn).DFS(root)
 
-    toc_ref_template = '<zero-md src="toc/%s.md"></zero-md>\n'
-    toc_ref = toc_ref_template % root
+    toc_ref_template = '<zero-md src="%s"></zero-md>\n'
+    toc_ref = toc_ref_template % path
     with open(os.path.join(TOC_DIR, 'toc.md')) as file:
         found = False
         for line in file:
