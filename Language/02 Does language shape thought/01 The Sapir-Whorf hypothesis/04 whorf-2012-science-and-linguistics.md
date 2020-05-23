@@ -1,0 +1,3 @@
+[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [01 The Sapir-Whorf hypothesis](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/01%20The%20Sapir-Whorf%20hypothesis) > [04 whorf-2012-science-and-linguistics.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/01%20The%20Sapir-Whorf%20hypothesis/04%20whorf-2012-science-and-linguistics.md) > 
+
+Currently blank, please check back later!

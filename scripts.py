@@ -7,7 +7,7 @@ import os
 from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
-    create_index_files('Language')
+    pass
 
 def process_language_readings():
     language_dir = './Language'
@@ -22,12 +22,7 @@ def create_index_files(root):
         if not os.path.isdir(curr): return
 
         with open(os.path.join(curr, 'index.md'), 'w') as file:
-            output, path_to_now = '', ''
-            for step in ph.split(curr):
-                path_to_now = os.path.join(path_to_now, step)
-                output += '[%s](%s) > ' % (step, ph.get_link(path_to_now))
-            file.write(output + '\n\n')
-
+            file.write(ph.get_nav_bar(curr))
             file.write(ph.get_filename(curr) + '\n')
             for child in os.listdir(curr):
                 if ph.valid_index_path(child):

@@ -62,3 +62,11 @@ class PathHelper:
     @staticmethod
     def get_filename(path):
         return os.path.split(path)[1]
+
+    @staticmethod
+    def get_nav_bar(path):
+        nav_bar, path_to_now = '', ''
+        for step in PathHelper.split(path):
+            path_to_now = os.path.join(path_to_now, step)
+            nav_bar += '[%s](%s) > ' % (step, PathHelper.get_link(path_to_now))
+        return nav_bar + '\n\n'
