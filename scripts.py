@@ -3,14 +3,11 @@
 """
 
 import os
-from urllib.parse import quote
 
-from tools import DirectoryTraversals
-
-base_url = 'https://bri25yu.github.io/'
+from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
-    create_toc('Language')
+    create_index_files('Language')
 
 def process_language_readings():
     language_dir = './Language'
@@ -20,24 +17,25 @@ def process_language_readings():
     DirectoryTraversals(post_fn=file_fn).BFS(language_dir)
 
 def create_index_files(root):
-    pass
+    def post_fn(curr):
+        if not os.path.isdir(curr): return
+
+        with open(os.path.join(curr, 'index.md'), 'w') as file:
+            pass
+
+    DirectoryTraversals(post_fn=post_fn).BFS(root)
 
 def create_toc(root):
+    template = '<summary>%s<a href="%s">%s</a></summary>\n'
+
     with open(os.path.join(root, '..', 'output.md'), 'w') as file:
         level = 0
         def pre_fn(curr):
             nonlocal level
             if not curr[-4:].lower() == '.pdf':
                 if os.path.isdir(curr): file.write('<details>\n')
-
-                filename = curr.split('\\')[-1]
                 prepend = '' if level == 0 else '&nbsp;' * 4 * (level + os.path.isfile(curr))
-                relative_url = '/'.join(curr.split('\\'))
-                link = base_url + quote(relative_url)
-
-                template = '<summary>%s<a href="%s">%s</a></summary>\n'
-
-                file.write(template % (prepend, link, filename))
+                file.write(template % (prepend, ph.get_link(curr), ph.get_filename(curr)))
             level += 1
 
         def post_fn(curr):

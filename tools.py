@@ -3,6 +3,9 @@
 """
 
 import os
+from urllib.parse import quote
+
+from settings import *
 
 class DirectoryTraversals:
     """
@@ -41,3 +44,13 @@ class DirectoryTraversals:
             self.DFS(child)
         self.post_fn(root)
 
+class PathHelper:
+
+    @staticmethod
+    def get_link(path):
+        relative_url = '/'.join(path.split('\\'))
+        return BASE_URL + quote(relative_url)
+
+    @staticmethod
+    def get_filename(path):
+        return path.split('\\')[-1]
