@@ -30,7 +30,8 @@ def create_toc(root):
             if not curr[-4:].lower() == '.pdf':
                 filename = curr.split('\\')[-1]
                 prepend = '' if level == 0 else ' ' * 4 * (level - 1) + ' - '
-                link = base_url + quote(curr)
+                relative_url = '/'.join(curr.split('\\'))
+                link = base_url + quote(relative_url)
                 file.write('%s[%s](%s)\n' % (prepend, filename, link))
             level += 1
 
