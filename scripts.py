@@ -10,7 +10,7 @@ from tools import DirectoryTraversals
 base_url = 'https://bri25yu.github.io/'
 
 def main():
-    pass
+    create_toc('Language')
 
 def process_language_readings():
     language_dir = './Language'
@@ -27,10 +27,10 @@ def create_toc(root):
         level = 0
         def pre_fn(curr):
             nonlocal level
-            if not curr.endswith('.pdf'):
+            if not curr[-4:].lower() == '.pdf':
                 filename = curr.split('\\')[-1]
                 prepend = '' if level == 0 else ' ' * 4 * (level - 1) + ' - '
-                link = quote(base_url + curr)
+                link = base_url + quote(curr)
                 file.write('%s[%s](%s)\n' % (prepend, filename, link))
             level += 1
 
