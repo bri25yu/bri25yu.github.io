@@ -1,3 +1,4 @@
 Language/*/*/*.pdf
 .vscode/*
 .vscode
+__pycache__
