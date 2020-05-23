@@ -21,9 +21,19 @@ def process_language_readings():
     create_toc('Language')
 
 def process_berkeley():
+    temp = DirectoryTraversals.TIEBREAK_FN
+    def tiebreak_fn(l):
+        key_fn = lambda s: s
+        sems = {'sp' : '0', 'su' : '1', 'fa' : '2'}
+        names = [ph.get_filename(s) for s in l if ph.valid_index_path(s)]
+        if all(map(lambda s: len(s) == 4 and s[:2] in sems, names)):
+            key_fn = lambda s: s[-2:] + sems.get(s[-4:-2], '9')
+        return sorted(l, key=key_fn)
     initialize_md_files('Berkeley')
     create_index_files('Berkeley')
+    DirectoryTraversals.TIEBREAK_FN = tiebreak_fn
     create_toc('Berkeley')
+    DirectoryTraversals.TIEBREAK_FN = temp
 
 def initialize_md_files(root):
     def post_fn(curr):

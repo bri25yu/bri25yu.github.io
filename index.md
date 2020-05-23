@@ -89,6 +89,14 @@
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa18/math191.html">math191</a></summary>
 </details>
 <details>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley/sp19">sp19</a></summary>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cogsci131_audit.html">cogsci131_audit</a></summary>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs195.html">cs195</a></summary>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs61b.html">cs61b</a></summary>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs70.html">cs70</a></summary>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/eecs16b.html">eecs16b</a></summary>
+</details>
+<details>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley/fa19">fa19</a></summary>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/anthro107.html">anthro107</a></summary>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/cs170.html">cs170</a></summary>
@@ -96,14 +104,6 @@
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/cs61a_ai.html">cs61a_ai</a></summary>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/eecs126.html">eecs126</a></summary>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/hkn_candidate.html">hkn_candidate</a></summary>
-</details>
-<details>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley/sp19">sp19</a></summary>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cogsci131_audit.html">cogsci131_audit</a></summary>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs195.html">cs195</a></summary>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs61b.html">cs61b</a></summary>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/cs70.html">cs70</a></summary>
-<summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/sp19/eecs16b.html">eecs16b</a></summary>
 </details>
 <details>
 <summary>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley/sp20">sp20</a></summary>
