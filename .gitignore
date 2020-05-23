@@ -2,3 +2,5 @@ Language/*/*/*.pdf
 .vscode/*
 .vscode
 __pycache__
+output.md
+test.md

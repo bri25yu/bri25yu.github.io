@@ -23,20 +23,26 @@ def create_index_files(root):
     pass
 
 def create_toc(root):
-    with open(os.path.join(root, '..', 'output.md'), 'a') as file:
+    with open(os.path.join(root, '..', 'output.md'), 'w') as file:
         level = 0
         def pre_fn(curr):
             nonlocal level
             if not curr[-4:].lower() == '.pdf':
+                if os.path.isdir(curr): file.write('<details>\n')
+
                 filename = curr.split('\\')[-1]
-                prepend = '' if level == 0 else ' ' * 4 * (level - 1) + ' - '
+                prepend = '' if level == 0 else '&nbsp;' * 4 * (level + os.path.isfile(curr))
                 relative_url = '/'.join(curr.split('\\'))
                 link = base_url + quote(relative_url)
-                file.write('%s[%s](%s)\n' % (prepend, filename, link))
+
+                template = '<summary>%s<a href="%s">%s</a></summary>\n'
+
+                file.write(template % (prepend, link, filename))
             level += 1
 
         def post_fn(curr):
             nonlocal level
+            if os.path.isdir(curr): file.write('</details>\n')
             level -= 1
 
         DirectoryTraversals(pre_fn=pre_fn, post_fn=post_fn).DFS(root)
