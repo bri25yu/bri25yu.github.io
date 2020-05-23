@@ -14,6 +14,7 @@ def main():
                 file.write('Currently blank, please check back later!')
     DirectoryTraversals(post_fn=post_fn).BFS('Language')
     create_index_files('Language')
+    create_toc('Language')
 
 def process_language_readings():
     language_dir = './Language'
