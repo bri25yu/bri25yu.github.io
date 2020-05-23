@@ -57,6 +57,7 @@ class PathHelper:
     @staticmethod
     def get_link(path):
         relative_url = '/'.join(PathHelper.split(path))
+        if relative_url.endswith('.md'): relative_url = relative_url[:-2] + 'html'
         return BASE_URL + quote(relative_url)
 
     @staticmethod

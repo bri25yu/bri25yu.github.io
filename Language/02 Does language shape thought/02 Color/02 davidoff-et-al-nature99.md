@@ -1,3 +1,3 @@
-[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [02 Color](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color) > [02 davidoff-et-al-nature99.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/02%20davidoff-et-al-nature99.md) > 
+[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [02 Color](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color) > [02 davidoff-et-al-nature99.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/02%20davidoff-et-al-nature99.html) > 
 
 Currently blank, please check back later!

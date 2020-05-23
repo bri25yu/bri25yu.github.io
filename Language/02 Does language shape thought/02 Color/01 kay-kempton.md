@@ -1,3 +1,3 @@
-[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [02 Color](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color) > [01 kay-kempton.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/01%20kay-kempton.md) > 
+[Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [02 Color](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color) > [01 kay-kempton.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/02%20Color/01%20kay-kempton.html) > 
 
 Currently blank, please check back later!

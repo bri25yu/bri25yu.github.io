@@ -7,7 +7,12 @@ import os
 from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
-    pass
+    def post_fn(curr):
+        if os.path.isfile(curr) and ph.valid_index_path(curr):
+            with open(curr, 'w') as file:
+                file.write(ph.get_nav_bar(curr))
+                file.write('Currently blank, please check back later!')
+    DirectoryTraversals(post_fn=post_fn).BFS('Language')
 
 def process_language_readings():
     language_dir = './Language'
