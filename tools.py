@@ -52,12 +52,21 @@ class PathHelper:
 
     @staticmethod
     def split(path):
-        return path.split('\\')
+        drive, path = os.path.splitdrive(path)
+        split = []
+        to_add = True
+        while to_add:
+            path, to_add = os.path.split(path)
+            split.append(to_add)
+        if drive: split[-1] = drive
+        else: split.pop()
+
+        return list(reversed(split))
 
     @staticmethod
-    def get_link(path):
-        relative_url = '/'.join(PathHelper.split(path))
-        if relative_url.endswith('.md'): relative_url = relative_url[:-2] + 'html'
+    def get_link(path, ext='html'):
+        relative_url = os.path.splitext(path)[0] + os.extsep + ext
+        relative_url = '/'.join(PathHelper.split(relative_url))
         return BASE_URL + quote(relative_url)
 
     @staticmethod
