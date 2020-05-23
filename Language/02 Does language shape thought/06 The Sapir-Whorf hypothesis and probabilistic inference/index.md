@@ -1,4 +1,4 @@
 [Language](https://bri25yu.github.io/Language) > [02 Does language shape thought](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought) > [06 The Sapir-Whorf hypothesis and probabilistic inference](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/06%20The%20Sapir-Whorf%20hypothesis%20and%20probabilistic%20inference) > 
 
 06 The Sapir-Whorf hypothesis and probabilistic inference
- - [01 regier-xu-2017.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/06%20The%20Sapir-Whorf%20hypothesis%20and%20probabilistic%20inference/01%20regier-xu-2017.md)
+ - [01 regier-xu-2017.md](https://bri25yu.github.io/Language/02%20Does%20language%20shape%20thought/06%20The%20Sapir-Whorf%20hypothesis%20and%20probabilistic%20inference/01%20regier-xu-2017.html)

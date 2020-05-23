@@ -13,6 +13,7 @@ def main():
                 file.write(ph.get_nav_bar(curr))
                 file.write('Currently blank, please check back later!')
     DirectoryTraversals(post_fn=post_fn).BFS('Language')
+    create_index_files('Language')
 
 def process_language_readings():
     language_dir = './Language'

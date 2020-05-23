@@ -1,6 +1,6 @@
 [Language](https://bri25yu.github.io/Language) > [01 Universal bases of human language](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language) > [01 Language and animal communication](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication) > 
 
 01 Language and animal communication
- - [01 hockett-1959.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/01%20hockett-1959.md)
- - [02 nyt-chimp-talk-1995.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/02%20nyt-chimp-talk-1995.md)
- - [03 savage-rumbaugh-et-al-1986.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/03%20savage-rumbaugh-et-al-1986.md)
+ - [01 hockett-1959.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/01%20hockett-1959.html)
+ - [02 nyt-chimp-talk-1995.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/02%20nyt-chimp-talk-1995.html)
+ - [03 savage-rumbaugh-et-al-1986.md](https://bri25yu.github.io/Language/01%20Universal%20bases%20of%20human%20language/01%20Language%20and%20animal%20communication/03%20savage-rumbaugh-et-al-1986.html)

@@ -48,7 +48,7 @@ class PathHelper:
 
     @staticmethod
     def valid_index_path(path):
-        return not (path[-4:].lower() == '.pdf' or PathHelper.get_filename(path) == 'index.md')
+        return not (path[-4:].lower() == '.pdf' or PathHelper.get_filename(path) == 'index')
 
     @staticmethod
     def split(path):
@@ -62,6 +62,7 @@ class PathHelper:
 
     @staticmethod
     def get_filename(path):
+        path, _ = os.path.splitext(path)
         return os.path.split(path)[1]
 
     @staticmethod
