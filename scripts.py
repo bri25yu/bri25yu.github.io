@@ -7,6 +7,15 @@ import os
 from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
+    pass
+
+def process_language_readings():
+    language_dir = './Language'
+    def file_fn(path):
+        if os.path.isfile(path): open(path[:-3] + 'md', 'w').close()
+
+    DirectoryTraversals(post_fn=file_fn).BFS(language_dir)
+
     def post_fn(curr):
         if os.path.isfile(curr) and ph.valid_index_path(curr):
             with open(curr, 'w') as file:
@@ -15,13 +24,6 @@ def main():
     DirectoryTraversals(post_fn=post_fn).BFS('Language')
     create_index_files('Language')
     create_toc('Language')
-
-def process_language_readings():
-    language_dir = './Language'
-    def file_fn(path):
-        if os.path.isfile(path): open(path[:-3] + 'md', 'w').close()
-
-    DirectoryTraversals(post_fn=file_fn).BFS(language_dir)
 
 def create_index_files(root):
     template = ' - %s\n'
@@ -38,7 +40,6 @@ def create_index_files(root):
     DirectoryTraversals(post_fn=post_fn).BFS(root)
 
 def create_toc(root):
-    # template = '<summary>%s<a href="%s">%s</a></summary>\n'
     template = '<summary>%s%s</summary>\n'
 
     with open(os.path.join(root, '..', 'output.md'), 'w') as file:
@@ -48,7 +49,6 @@ def create_toc(root):
             if ph.valid_index_path(curr):
                 if os.path.isdir(curr): file.write('<details>\n')
                 prepend = '' if level == 0 else '&nbsp;' * 4 * (level + os.path.isfile(curr))
-                # file.write(template % (prepend, ph.get_link(curr), ph.get_filename(curr)))
                 file.write(template % (prepend, ph.get_icon_filename(curr, '')))
             level += 1
 
