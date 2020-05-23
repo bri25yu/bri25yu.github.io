@@ -16,14 +16,22 @@ def process_language_readings():
 
     DirectoryTraversals(post_fn=file_fn).BFS(language_dir)
 
+    initialize_md_files('Language')
+    create_index_files('Language')
+    create_toc('Language')
+
+def process_berkeley():
+    initialize_md_files('Berkeley')
+    create_index_files('Berkeley')
+    create_toc('Berkeley')
+
+def initialize_md_files(root):
     def post_fn(curr):
         if os.path.isfile(curr) and ph.valid_index_path(curr):
             with open(curr, 'w') as file:
                 file.write(ph.get_nav_bar(curr))
                 file.write('Currently blank, please check back later!')
-    DirectoryTraversals(post_fn=post_fn).BFS('Language')
-    create_index_files('Language')
-    create_toc('Language')
+    DirectoryTraversals(post_fn=post_fn).BFS(root)
 
 def create_index_files(root):
     template = ' - %s\n'
