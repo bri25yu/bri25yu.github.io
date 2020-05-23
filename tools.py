@@ -47,6 +47,10 @@ class DirectoryTraversals:
 class PathHelper:
 
     @staticmethod
+    def valid_index_path(path):
+        return not (path[-4:].lower() == '.pdf' or PathHelper.get_filename(path) == 'index.md')
+
+    @staticmethod
     def split(path):
         return path.split('\\')
 

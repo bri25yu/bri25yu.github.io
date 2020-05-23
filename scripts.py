@@ -26,23 +26,23 @@ def create_index_files(root):
             for step in ph.split(curr):
                 path_to_now = os.path.join(path_to_now, step)
                 output += '[%s](%s) > ' % (step, ph.get_link(path_to_now))
-            file.write(output + '\n')
+            file.write(output + '\n\n')
 
             file.write(ph.get_filename(curr) + '\n')
             for child in os.listdir(curr):
-                file.write(template % (child, ph.get_link(os.path.join(curr, child))))
+                if ph.valid_index_path(child):
+                    file.write(template % (child, ph.get_link(os.path.join(curr, child))))
 
     DirectoryTraversals(post_fn=post_fn).BFS(root)
 
 def create_toc(root):
     template = '<summary>%s<a href="%s">%s</a></summary>\n'
-    valid_path = lambda p: not (p[-4:].lower() == '.pdf' or ph.get_filename(p) == 'index.md')
 
     with open(os.path.join(root, '..', 'output.md'), 'w') as file:
         level = 0
         def pre_fn(curr):
             nonlocal level
-            if valid_path(curr):
+            if ph.valid_index_path(curr):
                 if os.path.isdir(curr): file.write('<details>\n')
                 prepend = '' if level == 0 else '&nbsp;' * 4 * (level + os.path.isfile(curr))
                 file.write(template % (prepend, ph.get_link(curr), ph.get_filename(curr)))
