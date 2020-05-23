@@ -47,10 +47,14 @@ class DirectoryTraversals:
 class PathHelper:
 
     @staticmethod
+    def split(path):
+        return path.split('\\')
+
+    @staticmethod
     def get_link(path):
-        relative_url = '/'.join(path.split('\\'))
+        relative_url = '/'.join(PathHelper.split(path))
         return BASE_URL + quote(relative_url)
 
     @staticmethod
     def get_filename(path):
-        return path.split('\\')[-1]
+        return os.path.split(path)[1]
