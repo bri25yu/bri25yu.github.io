@@ -4,6 +4,7 @@
 
 import os
 
+from settings import TOC_DIR
 from tools import DirectoryTraversals, PathHelper as ph
 
 def main():
@@ -60,7 +61,7 @@ def create_index_files(root):
 def create_toc(root):
     template = '<summary>%s%s</summary>\n'
 
-    with open(os.path.join(root, '..', 'output.md'), 'w') as file:
+    with open(os.path.join(TOC_DIR, root + '.md'), 'w') as file:
         level = 0
         def pre_fn(curr):
             nonlocal level
@@ -76,6 +77,17 @@ def create_toc(root):
             level -= 1
 
         DirectoryTraversals(pre_fn=pre_fn, post_fn=post_fn).DFS(root)
+
+    toc_ref_template = '<zero-md src="%s.md"></zero-md>\n'
+    toc_ref = toc_ref_template % root
+    with open(os.path.join(TOC_DIR, 'toc.md')) as file:
+        found = False
+        for line in file:
+            if toc_ref in line:
+                found = True
+                break
+    with open(os.path.join(TOC_DIR, 'toc.md'), 'a') as file:
+        if not found: file.write(toc_ref)
 
 if __name__ == '__main__':
     main()
