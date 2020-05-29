@@ -65,7 +65,9 @@ class PathHelper:
 
     @staticmethod
     def get_link(path, ext='html'):
-        relative_url = os.path.splitext(path)[0] + os.extsep + ext
+        relative_url = os.path.splitext(path)[0]
+        if os.path.isdir(path): ext = ''
+        if ext: relative_url += os.extsep + ext
         relative_url = '/'.join(PathHelper.split(relative_url))
         return BASE_URL + quote(relative_url)
 
