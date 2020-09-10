@@ -1,6 +1,3 @@
-Language/*/*/*.pdf
 .vscode/*
 .vscode
 __pycache__
-test.md
-test.py

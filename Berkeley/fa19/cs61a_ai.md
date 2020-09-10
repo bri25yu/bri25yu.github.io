@@ -1,3 +1,0 @@
-<img src="..\..\images\home.png" alt="home" width="12" height="12" title="home"> [Main menu](https://bri25yu.github.io/) | <img src="..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley">Berkeley</a> > <img src="..\..\images\folder.jpg" alt="folder" width="12" height="12" title="folder"> <a href="https://bri25yu.github.io/Berkeley/fa19">fa19</a> > <img src="..\..\images\file.png" alt="file" width="12" height="12" title="file"> <a href="https://bri25yu.github.io/Berkeley/fa19/cs61a_ai.html">cs61a_ai</a> > 
-
-Currently blank, please check back later!
