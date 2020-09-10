@@ -1,0 +1,19 @@
+{
+  "name": "bri25yu.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for Brian Yu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bri25yu/bri25yu.github.io.git"
+  },
+  "author": "bri25yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bri25yu/bri25yu.github.io/issues"
+  },
+  "homepage": "https://github.com/bri25yu/bri25yu.github.io#readme"
+}
