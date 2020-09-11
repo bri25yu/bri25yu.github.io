@@ -1,2 +1,0 @@
-(this["webpackJsonpbri25yu.github.io"]=this["webpackJsonpbri25yu.github.io"]||[]).push([[0],[,,,function(e,n,t){e.exports=t(4)},function(e,n,t){"use strict";t.r(n);var i=t(0),r=t.n(i),u=t(2),a=t.n(u),c=document.getElementById("index");a.a.render(r.a.createElement("div",null,"Currently revamping, please check back later!"),c)}],[[3,1,2]]]);
-//# sourceMappingURL=main.8bcb4ba4.chunk.js.map
