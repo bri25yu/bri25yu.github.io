@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import ReactHtmlParser from 'react-html-parser';
+import ScrollToTop from 'react-scroll-up';
 
 import { APPS,
     ATTR,
     CLASS,
     EL,
+    SHOW_UNDER,
 } from "./constants";
 
 import "./style/index.css";
@@ -30,12 +32,27 @@ function Index(props) {
         {
             [ATTR.CLASSNAME]: "index",
         },
-        React.createElement(
-            PanelContainer,
-            {
-                [ATTR.PANEL_DATA]: getPanelData(),
-            }
-        )
+        [
+            React.createElement(
+                PanelContainer,
+                {
+                    [ATTR.PANEL_DATA]: getPanelData(),
+                }
+            ),
+            React.createElement(
+                ScrollToTop,
+                {
+                    [ATTR.SHOWUNDER]: SHOW_UNDER,
+                },
+                React.createElement(
+                    EL.IMG,
+                    {
+                        [ATTR.CLASSNAME]: "back-to-top-img",
+                        [ATTR.SRC]: "images/back_to_top.png",
+                    }
+                )
+            )
+        ]
     );
 }
 
