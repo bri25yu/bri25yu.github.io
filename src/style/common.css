@@ -1,5 +1,22 @@
 body {
-    background-color: #121212;
+    background-color: rgb(47, 47, 43);
     color: white;
     display: block;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(58, 58, 55); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(205, 200, 193);
 }

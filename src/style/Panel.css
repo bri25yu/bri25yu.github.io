@@ -1,0 +1,27 @@
+.panel-container {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+}
+
+.panel {
+    display: block;
+    padding: 5% 15%;
+    height: 30%;
+    font-family: Montserrat, sans-serif, Arial;
+    text-align: left;
+}
+
+.panel-title {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.panel-description {
+    font-size: 1.5em;
+    overflow: hidden;
+}
