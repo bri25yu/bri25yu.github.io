@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node ./preprocess.js; react-scripts build",
+    "build": "react-scripts build",
+    "load": "node ./preprocess.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
