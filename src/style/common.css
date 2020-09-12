@@ -4,19 +4,7 @@ body {
     display: block;
 }
 
-::-webkit-scrollbar {
-    width: 1em;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(58, 58, 55); 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(205, 200, 193);
+.title-container {
+    color: white;
+    text-decoration: none;
 }
