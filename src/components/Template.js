@@ -2,7 +2,7 @@ import React from "react";
 
 import ScrollToTop from 'react-scroll-up';
 
-import { APPS, ATTR, CLASS, COLOR, EL, SHOW_UNDER } from "../constants";
+import { ATTR, EL, SHOW_UNDER } from "../constants";
 
 import "../style/Template.css";
 
@@ -14,6 +14,7 @@ class Template extends React.Component {
             ScrollToTop,
             {
                 [ATTR.SHOWUNDER]: SHOW_UNDER,
+                [ATTR.KEY]: "scroll-to-top",
             },
             React.createElement(
                 EL.IMG,

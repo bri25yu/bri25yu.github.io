@@ -35,7 +35,7 @@ export const APPS = {
 
 export const COLOR = {
     TAUPE: "rgb(58, 58, 55)",
-    WHITE: "white",
+    WHITESMOKE: "whitesmoke",
     BEIGE: "#aaa6a0",
 }
 

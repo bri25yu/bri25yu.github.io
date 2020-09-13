@@ -1,6 +1,6 @@
 import React from "react";
 
-import { APPS, ATTR, CLASS, COLOR, EL } from "../constants";
+import { ATTR, COLOR, EL } from "../constants";
 
 import "../style/Panel.css";
 
@@ -8,7 +8,8 @@ import "../style/Panel.css";
 export default function PanelContainer(props) {
     const panel_data = props[ATTR.PANEL_DATA];
     const panels = panel_data.map((props, i) => {
-        const panel_type = (i % 2 == 0) ? DarkPanel : LightPanel;
+        const panel_type = (i % 2 === 0) ? DarkPanel : LightPanel;
+        props[ATTR.KEY] = `panel-${i}`;
         return React.createElement(
             panel_type,
             props
@@ -106,7 +107,7 @@ export function LightPanel(props) {
     return React.createElement(
         Panel,
         {
-            [ATTR.BACKGROUNDCOLOR]: COLOR.WHITE,
+            [ATTR.BACKGROUNDCOLOR]: COLOR.WHITESMOKE,
             [ATTR.COLOR]: COLOR.TAUPE,
             [ATTR.MOUSEOVER_COLOR]: COLOR.BEIGE,
             [ATTR.TITLE]: props[ATTR.TITLE],
@@ -121,7 +122,7 @@ export function DarkPanel(props) {
         Panel,
         {
             [ATTR.BACKGROUNDCOLOR]: COLOR.TAUPE,
-            [ATTR.COLOR]: COLOR.WHITE,
+            [ATTR.COLOR]: COLOR.WHITESMOKE,
             [ATTR.MOUSEOVER_COLOR]: COLOR.BEIGE,
             [ATTR.TITLE]: props[ATTR.TITLE],
             [ATTR.DESCRIPTION]: props[ATTR.DESCRIPTION],

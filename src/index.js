@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import ReactHtmlParser from 'react-html-parser';
 
-import { APPS, ATTR, CLASS, EL } from "./constants";
+import { APPS, ATTR } from "./constants";
 
 import "./style/common.css";
 
@@ -65,6 +65,7 @@ class Index extends React.Component {
             PanelContainer,
             {
                 [ATTR.PANEL_DATA]: this.panelData,
+                [ATTR.KEY]: "panel-container",
             }
         );
     }

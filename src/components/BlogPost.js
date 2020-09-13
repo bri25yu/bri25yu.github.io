@@ -1,6 +1,6 @@
 import React from "react";
 
-import { APPS, ATTR, CLASS, COLOR, EL } from "../constants";
+import { ATTR, EL } from "../constants";
 
 import "../style/BlogPost.css";
 
