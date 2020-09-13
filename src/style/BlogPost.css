@@ -1,11 +1,34 @@
 .blog-post {
-
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    font-family: Montserrat, sans-serif, Arial;
+    text-align: center;
+    background-color: whitesmoke;
+    color: rgb(58, 58, 55);
+    height: 100vh;
 }
 
 .blog-post-title {
-
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 80%;
 }
 
 .blog-post-body {
-
+    font-size: 1.5em;
+    overflow: hidden;
+    margin: auto;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 80%;
 }

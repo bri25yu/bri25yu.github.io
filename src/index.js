@@ -24,6 +24,7 @@ function getPanelData(rawPanelData, parent) {
         const panelDatum = {};
         panelDatum[ATTR.TITLE] = title;
         panelDatum[ATTR.DESCRIPTION] = ReactHtmlParser(data[ATTR.DESCRIPTION]);
+        panelDatum[ATTR.BODY] = ReactHtmlParser(data[ATTR.BODY]);
         panelDatum[ATTR.ONCLICK] = parent.updatePageWrapper(data[ATTR.TITLE]);
         panelData.push(panelDatum);
     }
