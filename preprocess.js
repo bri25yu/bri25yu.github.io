@@ -44,7 +44,7 @@ function getPanelDataFromPathWrapper(d) {
         body = markdown.makeHtml(body);
         description = markdown.makeHtml(description);
 
-        d[fs.statSync(curr_path).mtimeMs] = {
+        d[-fs.statSync(curr_path).mtimeMs] = {
             [constants.ATTR_TITLE]: title,
             [constants.ATTR_DESCRIPTION]: description,
             [constants.ATTR_BODY]: body,

@@ -8,10 +8,10 @@
     margin-bottom: 2.5%;
     padding: 2em;
     font-family: Montserrat, sans-serif, Arial;
-    text-align: center;
+    text-align: justify;
     background-color: whitesmoke;
     color: rgb(58, 58, 55);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .blog-post-title {
@@ -22,7 +22,7 @@
     overflow: hidden;
     text-decoration: none;
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
 }
 
 .blog-post-body {
@@ -31,5 +31,5 @@
     margin: auto;
     text-decoration: none;
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
 }
