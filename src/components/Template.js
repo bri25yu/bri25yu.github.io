@@ -6,10 +6,24 @@ import { ATTR, EL, SHOW_UNDER } from "../constants";
 
 import "../style/Template.css";
 
+import NavBar, { HomeNav } from "./NavBar";
+
 
 class Template extends React.Component {
     render() {
         const children = this.props[ATTR.CHILDREN];
+
+        children.splice(0, 0, React.createElement(
+            NavBar,
+            null,
+            React.createElement(
+                HomeNav,
+                {
+                    [ATTR.ONCLICK]: this.props[ATTR.HOME_FN],
+                }
+            )
+        ));
+
         children.push(React.createElement(
             ScrollToTop,
             {

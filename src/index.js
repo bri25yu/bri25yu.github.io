@@ -85,6 +85,7 @@ class Index extends React.Component {
             Template,
             {
                 [ATTR.CHILDREN]: [this.pages[this.state[ATTR.PAGE]]],
+                [ATTR.HOME_FN]: this.updatePageWrapper("index"),
             },
         );
     }

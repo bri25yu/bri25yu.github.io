@@ -9,6 +9,7 @@ export const ATTR = {
     CHILDREN: "children",
     CLASSNAME: "className",
     COLOR: "color",
+    HOME_FN: "home_fn",
     MOUSEOVER_COLOR: "mouseover_color",
     ONMOUSEENTER: "onMouseEnter",
     ONMOUSELEAVE: "onMouseLeave",

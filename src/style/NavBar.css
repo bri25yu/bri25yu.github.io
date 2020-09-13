@@ -1,0 +1,18 @@
+.nav-bar {
+    margin-left: 0.5vw;
+    width: 0;
+    height: 0;
+    text-align: left;
+    float: left;
+}
+
+.home-nav {
+
+}
+
+.home-img {
+    width: 3vw;
+    position: absolute;
+    left: 1.5%;
+    top: 2.5em;
+}
