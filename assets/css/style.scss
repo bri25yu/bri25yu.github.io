@@ -8,6 +8,15 @@ div.shell > footer {
   display: none;
 }
 
+.pdf-slides {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  min-height: 400px;
+  margin: 1.5rem 0;
+  border: 0;
+}
+
 // Widen the shared layout while preserving the theme's mobile styles.
 @media screen and (min-width: 641px) {
   div.shell {
