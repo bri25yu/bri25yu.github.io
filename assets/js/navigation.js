@@ -8,7 +8,7 @@
   updateMenu();
   desktop.addEventListener('change', updateMenu);
 
-  const pageTitle = document.querySelector('.shell header h1').textContent.trim();
+  const pageTitle = document.getElementById('main_content').dataset.pageTitle || '';
   const headings = Array.from(document.querySelectorAll(
     '#main_content h1[id], #main_content h2[id], #main_content h3[id]'
   )).filter(heading => heading.id !== 'table-of-contents' && heading.textContent.trim() !== pageTitle);
