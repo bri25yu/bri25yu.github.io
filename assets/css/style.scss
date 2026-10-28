@@ -3,7 +3,8 @@
 
 @import "{{ site.theme }}";
 
-a#forkme_banner {
+a#forkme_banner,
+div.shell > footer {
   display: none;
 }
 
@@ -13,8 +14,7 @@ a#forkme_banner {
     width: 80%;
   }
 
-  header,
-  footer {
+  header {
     max-width: none;
   }
 
