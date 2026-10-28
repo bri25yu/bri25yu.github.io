@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+a#forkme_banner {
+  display: none;
+}
+
 // Widen the shared layout while preserving the theme's mobile styles.
 @media screen and (min-width: 641px) {
   div.shell {
@@ -16,6 +20,18 @@
 
   span.banner-fix {
     width: 80vw;
+    background-size: 100% 19px;
+  }
+
+  div#no-downloads {
+    width: 100%;
+    background-size: 100% 160px;
+  }
+
+  div#no-downloads span.inner {
+    width: 100%;
+    // Stretch horizontally while preserving the sprite's two 197px states.
+    background-size: 100% 394px;
   }
 
   section#main_content {
