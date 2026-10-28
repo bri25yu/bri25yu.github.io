@@ -2,3 +2,24 @@
 ---
 
 @import "{{ site.theme }}";
+
+// Widen the shared layout while preserving the theme's mobile styles.
+@media screen and (min-width: 641px) {
+  div.shell {
+    width: 80%;
+  }
+
+  header,
+  footer {
+    max-width: none;
+  }
+
+  span.banner-fix {
+    width: 80vw;
+  }
+
+  section#main_content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
