@@ -21,6 +21,110 @@ div.shell > footer {
   display: none;
 }
 
+.page-layout {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.page-layout #main_content {
+  min-width: 0;
+}
+
+.site-sidebar {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 1rem;
+  background: #fff6e9;
+  border: 1px solid #d3ccc1;
+  border-radius: 0.4rem;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+.site-navigation > summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #7c334f;
+}
+
+.site-navigation .nav-label {
+  margin: 1.25rem 0 0.4rem;
+  color: #7c334f;
+  font-size: 1em;
+}
+
+.site-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation li {
+  padding: 0;
+  background: none;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus-visible {
+  background: #ece4d8;
+}
+
+.site-navigation a[aria-current="page"] {
+  background: #7c334f;
+  color: #fff6e9;
+  font-weight: bold;
+}
+
+#page-toc li {
+  padding-left: calc(var(--heading-depth, 0) * 0.75rem);
+}
+
+#main_content :is(h1, h2, h3, h4, h5, h6)[id] {
+  scroll-margin-top: 1rem;
+}
+
+@media screen and (min-width: 1001px) {
+  .site-navigation > summary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .site-sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .site-navigation[open] > summary {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .site-sidebar {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
 .about-me {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
