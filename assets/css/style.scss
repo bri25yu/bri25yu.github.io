@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.shell header h1 {
+  text-transform: none;
+}
+
 .shell h1,
 .shell h2,
 .shell h3,

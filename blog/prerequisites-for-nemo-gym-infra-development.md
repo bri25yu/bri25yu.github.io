@@ -2,11 +2,9 @@
 layout: default
 title: "Prerequisites for NeMo Gym infra development"
 ---
-# Prerequisites for NeMo Gym infra development
 
 # Table of contents
 
-- [Prerequisites for NeMo Gym infra development](#prerequisites-for-nemo-gym-infra-development)
 - [Table of contents](#table-of-contents)
 - [Best practices and principles](#best-practices-and-principles)
   - [Software](#software)
