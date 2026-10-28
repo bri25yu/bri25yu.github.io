@@ -8,6 +8,33 @@ div.shell > footer {
   display: none;
 }
 
+.about-me {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.about-me .profile-photo {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about-me {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .about-me .profile-photo {
+    margin: 0 auto;
+  }
+}
+
 .pdf-slides {
   display: block;
   width: 100%;
