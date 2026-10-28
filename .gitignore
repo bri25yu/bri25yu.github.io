@@ -1,2 +1,5 @@
 # The built site
 _site
+
+# Compiled style outputs
+.sass-cache
