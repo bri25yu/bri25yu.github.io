@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Prerequisites for NeMo Gym infra development"
+---
 # Prerequisites for NeMo Gym infra development
 
 # Table of contents
